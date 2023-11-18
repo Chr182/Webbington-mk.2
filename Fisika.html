@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styling.css">
+    <title>Document</title>
+</head>
+<body onload="checkzoom()">
+    <div class="backgroundimg">
+        <img src="PhysicsBackground.jpg" style="width:100%;">
+    </div>
+    <div class="placeholder" id="placeholder">
+        <div class="side" id="sidebox">
+            <button class="sidebutton" onclick="fly('1')">Usaha</button>
+            <button class="sidebutton" onclick="fly('2')">Medan Gravitasi</button>
+            <button class="sidebutton" onclick="fly('3')">Vektor</button>
+        </div>
+        <div class="circle" onclick="slide()">
+            <img src="download.png" class="arrow" id="arrow">
+        </div>
+    </div>
+    <div id="checker2"></div>
+    <div class="header">
+        <div style="display:flex; flex-direction:row; margin:auto; width:auto;">
+            <img src="Logo-Web-2.png" alt="Logo Kolese Kanisius" style="width:2.75rem; margin-top:0.5rem; margin-bottom:0.5rem;">
+            <div style="display:flex; flex-direction:column; margin-left:20px; margin-top:auto; margin-bottom:auto;">
+                <h3 style="margin:0px; color:rgb(61, 61, 202);">Kolese</h3>
+                <h3 style="margin:0px; color:rgb(214, 161, 63);">Kanisius</h3>
+            </div>
+        </div>
+    </div>
+    <div class="BG">
+        <img src="ArchivePage.jpg" alt="Foto perpustakaan" style="width:100%; z-index:-2; margin:0px;">
+        <div class="centered" id="centertext"><h1>Fisika</h1></div>
+    </div>
+    <div id="checker"></div>
+    <div class="navbar" id="navbar">
+        <h3>Made by Yohanes Christopher Hardjito XI5/34 TIK_1</h3>
+        <div style="margin:auto;"></div>
+        <div class="island" style="width:600px;">
+            <a href="Archive.html">
+                <button class="IButton">
+                    <h3>Archives</h3>
+                </button>
+            </a>
+            <a href="Fisika.html">
+                <button class="IButton">
+                    <h3>Fisika</h3>
+                </button>
+            </a>
+            <a href="Kimia.html">
+                <button class="IButton">
+                    <h3>Kimia</h3>
+                </button>
+            </a>
+            <a href="Ekonomi.html">
+                <button class="IButton">
+                    <h3>Ekonomi</h3>
+                </button>
+            </a>
+            <a href="Matematika.html">
+                <button class="IButton">
+                    <h3>Matematika</h3>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="bodypage" id="bodypage">
+        <div class="sidegrid" style="background-color:rgba(255, 166, 0, 0.177);"></div>
+        <div class="maingrid">
+        <h1 id="1">Usaha</h1> 
+        <hr>
+        <h2>Usaha adalah suatu besaran skalar, dimana kita dapat menghitung energi yang diperlukan, untuk memindahkan suatu benda bermassa, dari satu titik ke titik lain. Sehingga jika kita memindahkan benda tersebut ke tempatnya semula, maka Usaha dinyatakan sebagai 0</h2>
+        <img src="Usaha.png">
+        <h2>Secara matematis, Usaha dapat didefinisikan dalam sebuah rumus, yakni:</h2> <br>
+        <img src="Rumus Usaha.png"> <br>
+        <h2>Dimana: <br> F = Gaya dalam Newton <br> s = perpindahan dalam meter <br> θ = Sudut antara gaya dan perpindahan <br> W = Usaha dalam Joule</h2>
+        <br>
+        <h1>Gaya Gravitasi</h1> <hr>
+        <img src="diagram grav.png">
+        <h2>Ketika terdapat dua objek dengan jarak dan massa, maka diantara kedua objek tersebut gaya gravitasi akan muncul. gaya gravitasi adalah sebuah gaya yang akan selalu bersifat tarik menarik, satu objek dengan objek yang lain, mau dua, tiga, maupun banyak jumlahnya objek pada diagram tersebut. Maka dari sini kita dapat merumuskan bahwa: </h2>
+        <img src="Rumus grav.png">
+        <br>
+        <h2 id="2">Dimana: <br> G = Tetapan gravitasi 6,67 x 10^-11 <br> r = Jarak antara pusat benda <br> M1, M2 = Massa masing - masing benda</h2>
+        <br>
+        <h1>Medan Gravitasi</h1> <hr>
+        <h2>Medan gravitasi didefinisikan sebagai ruang di sekitar suatu benda yang bermassa M, dimana benda lain di ruangan tersebut yang juga bermassa didalam ruang itu akan mengalami gaya gravitasi. Gaya gravitasi dan medan gravitasi, keduanya merupakan besaran Vektor. Medan gravitasi sendiri juga sering disebut sebagai percepetan gravitasi, dengan satuan yakni:</h2> <br>
+        <h1>N/kg = m/s^2</h1>
+        <img src="Med Grav.png"> <br>
+        <h2>Dari gambar tersebut, kita dapat merumuskan bahwa:</h2> <br>
+        <h2 id="3">g = percepetan gravitasi <br> F = gaya gravitasi <br> G = Tetapan gravitasi 6,67 x 10^-11 <br> M = massa sumber <br> m = massa objek lainnya <br> r = jarak, dihitung dari titik psuat setiap benda</h2>
+        <br>
+        <h1>Vektor</h1> <hr>
+        <h2>Vektor adalah suatu besaran yang tidak hanya memiliki nilai namun juga memiliki arah, vektor tidak hanya menunjukkan besaran nilai sesuatu melainkan juga arah ke mana sesuatu tersebut bekerja. Seperti pada gaya, vektor tidak hanya menunjukkan besar gaya yang diterapkan.</h2>
+        <img src="Vektor.png"> <br>
+        <h2>Untuk menyederhanakan perhitungan - perhitungan terkait vektor di masa yang akan datang, maka kita juga penting untuk mengetahui komponen vektor. Komponen vektor berbeda dari vektor tersebut sendiri, dimana vektor tersebut mempunyai suatu arah yang spesifik, komponen vektor menentukan seberapa besar vektor tersebut ke arah garis X, Y, dan Z jika tiga dimensional</h2> <br>
+        <img src="komp Vektor.png"> <br>
+        <h2>Maka dengan mengetahui komponen vektor dari masing-masing vektor, kita dapat mengetahui secara tepat besarnya pada garis X dan Y</h2>
+        </div>
+        <div class="sidegrid" style="background-color:rgba(255, 166, 0, 0.163);"></div>
+    </div>
+</body>
+</html>

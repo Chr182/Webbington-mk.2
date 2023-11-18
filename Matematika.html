@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styling.css">
+    <title>Document</title>
+</head>
+<body onload="checkzoom()">
+    <div class="backgroundimg">
+        <img src="MatematikaBackground.jpg"width:100%;">
+    </div>
+    <div class="placeholder" id="placeholder">
+        <div class="side" id="sidebox">
+            <button class="sidebutton" onclick="fly('1')">Barisan Deret</button>
+            <button class="sidebutton" onclick="fly('2')">Data Kelompok</button>
+            <button class="sidebutton" onclick="fly('3')">Data Tunggal</button>
+        </div>
+        <div class="circle" onclick="slide()">
+            <img src="download.png" class="arrow" id="arrow">
+        </div>
+    </div>
+    <div id="checker2"></div>
+    <div class="header">
+        <div style="display:flex; flex-direction:row; margin:auto; width:auto;">
+            <img src="Logo-Web-2.png" alt="Logo Kolese Kanisius" style="width:2.75rem; margin-top:0.5rem; margin-bottom:0.5rem;">
+            <div style="display:flex; flex-direction:column; margin-left:20px; margin-top:auto; margin-bottom:auto;">
+                <h3 style="margin:0px; color:rgb(61, 61, 202);">Kolese</h3>
+                <h3 style="margin:0px; color:rgb(214, 161, 63);">Kanisius</h3>
+            </div>
+        </div>
+    </div>
+    <div class="BG">
+        <img src="ArchivePage.jpg" alt="Foto perpustakaan" style="width:100%; z-index:-2; margin:0px;">
+        <div class="centered" id="centertext"><h1>Matematika</h1></div>
+    </div>
+    <div id="checker"></div>
+    <div class="navbar" id="navbar">
+        <h3>Made by Yohanes Christopher Hardjito XI5/34 TIK_1</h3>
+        <div style="margin:auto;"></div>
+        <div class="island" style="width:600px;">
+            <a href="Archive.html">
+                <button class="IButton">
+                    <h3>Archives</h3>
+                </button>
+            </a>
+            <a href="Fisika.html">
+                <button class="IButton">
+                    <h3>Fisika</h3>
+                </button>
+            </a>
+            <a href="Kimia.html">
+                <button class="IButton">
+                    <h3>Kimia</h3>
+                </button>
+            </a>
+            <a href="Ekonomi.html">
+                <button class="IButton">
+                    <h3>Ekonomi</h3>
+                </button>
+            </a>
+            <a href="Matematika.html">
+                <button class="IButton">
+                    <h3>Matematika</h3>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="bodypage" id="bodypage">
+        <div class="sidegrid" style="background-color:rgba(255, 166, 0, 0.177);"></div>
+        <div class="maingrid">
+        <h1>Barisan deret</h1> <hr>
+        <h2>Barisan adalah urutan bilangan yang memiliki karakteristik atau pola tertentu. Setiap bilangan yang ada pada barisan merupakan disebut suku dilambangkan Un dengan n adalah urutan suku. Deret adalah penjumlahan suku-suku dari suatu barisan dilambangkan dengan Sn</h2> <br>
+        <h2>Misalnya<br>Barisan = U1,U2,U3,U4.....,Un<br>Deret = U1 + U2 + U3 + U4....... + Un = Sn</h2> <br>
+        <h1>Barisan Aritmetika</h1> <br>
+        <h2>Barisan aritmetika adalah adalah suatu barisan bilangan-bilangan dimana beda (selisih) antara dua suku berurutan merupakan bilangan tetap.<br>Contoh:1,2,3,4,5....</h2> <br>
+        <h2>Maka, di barisan aritmetika sendiri ada beberapa rumus, yakni: </h2> <br>
+        <h2>Rumus suku n</h2> <br>
+        <img src="Suku n.png"> <br>
+        <h2>Rumus ini dapat digunakan untuk mencari suku apapun, menggunakan notasi n sebagai pacuan untuk nomer ke berapa suku tersebut</h2> <br>
+        <h2>Keterangan: <br>Un = Suku ke-n<br>U1 = a = suku pertama <br>b = beda antar suku,selisih (Un - U(n-1))<br>n = posisi suku</h2> <br>
+        <h2>Rumus deret aritmetika</h2> <br>
+        <img src="deret aritmetika.png"> <br>
+        <h2>Rumus ini dapat digunakan untuk mencari total nilai hingga pada suku ke-n</h2> <br>
+        <h2>Keterangan: <br>Sn = Jumlah n suku pertama<br>U1 = a = S = suku pertama<br>b = beda antar suku<br>n = posisi suku</h2>
+        <br>
+        <h1 id="2">Data kelompok</h1> <hr>
+        <h2>Data kelompok adalah data yang sudah disusun dalam kelas interval tertentu. Data kelompok memiliki jumlah data yang lebih banyak dari data tunggal dan disajikan dalam tabel frekuensi, maupun diagram - diagram dalam bentuk lainnya, seperti histogram. Karena nilainya yang hampir mustahil untuk secara tepat ditentukan, maka terdapat bebearpa rumus baru, dan juga hal - hal lainnya yang baru.</h2> <br>
+        <h2>Kelas: Interval nilai (misalnya 10-19)<br>P: Panjang kelas (misalnya p=9 dari kelas 10-19)<br>Tepi bawah: Kelas - 0.5 (Misalnya kelas 10-19, maka tepi bawahnya adalah 9,5) <br> Tepi atas: Kelas + 0.5 (Misalnya kelas1-=19, maka tepi atasnya adalah 19,5) <br> Nilai tengah: nilai tengah, atau "median" dari kelas (misalnya kelas 10-19, maka nilai tengahnya adalah 14.5)</h2> <br>
+        <h2>Maka sama saja seperti data tunggal, data kelompok memiliki mean, median dan modus, namun tentunya dengan rumus yang jauh lebih rumit</h2> <br>
+        <h2>1. Mean <br> <img src="Mean (2).png"> <br>Keterangan:<br>Sigma F: frekuensi dari data setiap kelas masing - masing<br>X bar: Mean<br>n: jumlah data<br>x: nilai tengah dari kelas F</h2> <br>
+        <h2>2. Median <br> <img src="Median (2).png"> <br>Untuk menentukan kelas mana yang median, maka kita harus menghitung frekuensi total terlebih dahulu (misalnya jika F total = 40, berarti mediannya berada di kelas dengan datum ke-20) <br>Keterangan:<br>n: jumlah total frekuensi<br>Tb: tepi bawah dari kelasnya median<br>fk: jumlah frekuensi kelas sebelumnya kelas median<br>fi: frekuensi kelasnya median<br>p: panjang kelas</h2> <br>
+        <h2>3. Modus <br> <img src="Modus.png"> <br>Untuk menentukan kelas mana yang modus, maka sama seperti data tunggal kita hanya harus mencari data, dan kelas dengan frekuensi tertinggi<br>Keterangan:<br>Tb: tepi bawah dari kelasnya modus<br>Mo: modus<br>d1: selisih frekuensi kelasnya modus dengan frekuensi sebelum kelasnya modus<br>d2: selisih frekuensi kelasnya modus dengan frekuensi sesudah kelasnya modus<br>p: panjang keals dan interval data</h2>
+        <br>
+        <h1 id="3">Data Tunggal</h1> <hr>
+        <h2>Data tunggal di matematika, berarti sebuah kumpulan datum yang cukup sederhana, yakni data dalam jumlah yang sedikit dan dengan nilai yang sudah ditentukan, dan tidak dalam bentuk interval. Maka tentunya kumpulan data ini akan mempunyai beberapa hal, seperti Mean, Median dan modus. Contoh data tunggal: 3,4,2,3,5,1</h2> <br>
+        <h2>Mean adalah rata-rata dari kumpulan data tersebut, yang dapat kita dapatkan dengan cara membagi total dari nilai semua data, dengan jumlah data yang disajikan</h2> <br>
+        <img src="Mean.png"> <br>
+        <h2>Median adalah "Nilai tengah" atau data ditengah yang diperoleh sesudah kita urutkan dari kecil ke paling besar data tersebut. Maka dari itu, terdapat dua rumus. Satu jika data berjumlah ganjil dan satu lagi khusus jika datanya berjumlah genap. Jika datanya berjumlah ganjil maka sangat sederhana, kita hanya perlu mengurutkan data tersebut dan mengambil data tengah. Namun jika data berjumlah genap maka kita harus mengambil dua data yang paling mendekati tengah, misalnya nilai ke-2 dan ke-3 jika terdapat 4 jumlah nilai.</h2> <br>
+        <img src="Median.png"> <br>
+        <h2>Modus adalah nilai data yang paling sering muncul, atau bisa dibilang nilai data yang memiliki frekuensi terbesar.</h2>
+        </div>
+        <div class="sidegrid" style="background-color:rgba(255, 166, 0, 0.163);"></div>
+    </div>
+</body>
+</html>

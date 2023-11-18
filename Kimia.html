@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styling.css">
+    <title>Document</title>
+</head>
+<body onload="checkzoom()">
+    <div class="backgroundimg">
+        <img src="KimiaBackground.jpeg" style="width:100%;">
+    </div>
+    <div class="placeholder" id="placeholder">
+        <div class="side" id="sidebox">
+            <button class="sidebutton" onclick="fly('1')">Senyawa Karbon</button>
+            <button class="sidebutton" onclick="fly('2')">Hidrokarbon</button>
+            <button class="sidebutton" onclick="fly('3')">Terminal mol</button>
+        </div>
+        <div class="circle" onclick="slide()">
+            <img src="download.png" class="arrow" id="arrow">
+        </div>
+    </div>
+    <div id="checker2"></div>
+    <div class="header">
+        <div style="display:flex; flex-direction:row; margin:auto; width:auto;">
+            <img src="Logo-Web-2.png" alt="Logo Kolese Kanisius" style="width:2.75rem; margin-top:0.5rem; margin-bottom:0.5rem;">
+            <div style="display:flex; flex-direction:column; margin-left:20px; margin-top:auto; margin-bottom:auto;">
+                <h3 style="margin:0px; color:rgb(61, 61, 202);">Kolese</h3>
+                <h3 style="margin:0px; color:rgb(214, 161, 63);">Kanisius</h3>
+            </div>
+        </div>
+    </div>
+    <div class="BG">
+        <img src="ArchivePage.jpg" alt="Foto perpustakaan" style="width:100%; z-index:-2; margin:0px;">
+        <div class="centered" id="centertext"><h1>Kimia</h1></div>
+    </div>
+    <div id="checker"></div>
+    <div class="navbar" id="navbar">
+        <h3>Made by Yohanes Christopher Hardjito XI5/34 TIK_1</h3>
+        <div style="margin:auto;"></div>
+        <div class="island" style="width:600px;">
+            <a href="Archive.html">
+                <button class="IButton">
+                    <h3>Archives</h3>
+                </button>
+            </a>
+            <a href="Fisika.html">
+                <button class="IButton">
+                    <h3>Fisika</h3>
+                </button>
+            </a>
+            <a href="Kimia.html">
+                <button class="IButton">
+                    <h3>Kimia</h3>
+                </button>
+            </a>
+            <a href="Ekonomi.html">
+                <button class="IButton">
+                    <h3>Ekonomi</h3>
+                </button>
+            </a>
+            <a href="Matematika.html">
+                <button class="IButton">
+                    <h3>Matematika</h3>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="bodypage" id="bodypage">
+        <div class="sidegrid" style="background-color:rgba(255, 166, 0, 0.177);"></div>
+        <div class="maingrid">
+            <h1>Senyawa Karbon</h1> <hr>
+            <h2>Senyawa Karbon merupakan senyawa yang penyusun utamanya adalah atom karbon (atom C). Atom lainnya dalam senyawa karbon antara lain adalah: hidrogen, oksigen, sulfur, nitrogen. Disebut sebagai senyawa organik (zat hidup) karena pada awalnya sumber senyawa-senyawa ini berasal dari sisa-sisa makhluk hidup.</h2> <br>
+            <h2>Senyawa karbon merupakan senyawa yang istimewa karena beberapa hal, yakni: <br> 1. Atom karbon memiliki 4 elektron valensi <br> - Menyebabkan atom karbon dapat membentuk 4 ikatan kovalen, paling banyak daripada atom-atom lainnya. <br> 2. Atom karbon berjari-jari atom paling kecil dalam golongannya <br> - Ikatan kovalen yang terbentuk relatif kuat <br> Atom karbon dapat membentuk ikatan rangkap dan rangkap tiga.</h2>
+            <img src="Senyawa Karbon.png">
+            <br>
+            <h1 id="2">Hidrokarbon</h1> <hr>
+            <h2>Senyawa Hidrokarbon adalah senyawa karbon yang hanya terdiri dari unsur karbon (C) dan hidrogen (H). Senyawa hidrokarbon dapat digolongkan berdasarkan bentuk rantai karbon, seperti:</h2> <br>
+            <h2>1. Alifatik <br> Hidrokarbon rantai terbuka</h2>
+            <img src="Alifatik.png">
+            <h2>2. Alisiklik <br> Hidrokarbon rantai tertutup</h2>
+            <img src="Alisiklik.png">
+            <h2>3. Aromatik <br> Hidrokarbon berikatan konjungsi, yaitu ikatan tunggal dan rangkap yang tersusun selang-seling </h2>
+            <img src="Aromatik.png"> <br>
+            <h2>Mereka pun juga dapat digolongkan berdasarkan ikatan antar atom karbon</h2>
+            <h2>1. Hidrokarbon Jenuh <br> Jika semua atom karbon berikatan tunggal.</h2>
+            <img src="Jenuh.png">
+            <h2>2. Hidrokarbon Tak Jenuh <br> Jika terdapat satu saja ikatan rangkap atau rangkap tiga.</h2>
+            <img src="Tak Jenuh.png">    
+            <br>
+            <h1 id="3">Konsep Mol</h1> <hr>
+            <h2>Mol merupakan sebuah satuan hitung dalam kimia, yang dapat digunakan dalam berbagai larutan, zat, hingga senyawa - senyawa tersebut sendiri. Oleh karena itu, mol mempunyai banyak korelasinya dengan sifat - sifat lain dari mereka, seperti volume, massa, jumlah partikel, suhu dan molaritas. Maka dari itu, lahirlah terminal mol, yakni sebuah diagram yang dibuat untuk menjelaskan korelasi mol dengan hal - hal tersebut, dan juga rumus yang diperlukan untuk mengubah mol menjadi sifat - sifat benda tersebut:</h2> <br>
+            <img src="Term mol.png"><br>
+            <h2>Maka dari diagram tersebut, didapatkan bahwa:
+            <br>
+            Mol -> Jumlah partikel = Mol x 6.02 x 10^23 <br> Jumlah Partikel -> Mol = Jumlah partikel/6.02 x 10^23
+            <br>
+            Mol -> Molaritas = Mol x Volume <br> Molaritas -> Mol = Molaritas/Volume 
+            <br>
+            Mol -> Massa = Mol x Massa relatif atom/molekul <br> Massa -> Mol = Massa/Massa relatif atom/molekul
+            <br>
+            Mol -> Volume = (Y) x n <br> Volume -> Mol = Volume/(Y)
+            <br id="3">
+            (Bagi Volume, Y adalah 22,4 jika suhu standar dan 24 jika suhu ruangan)
+            <br>
+            <h1>RE dan RM</h1> <hr>
+            <h2>Rumus empiris dan Rumus molekul dari sebuah molekul sangatlah penting, karena mereka menunjukkan perbandingan dari unsur - unsur di molekul tersebut, hanya kedua dari mereka mmepunyai arti yang berbeda. RUmus empiris berarti rumus yang paling dasarnya, dan paling sederhana, berarti yang misalnya C2O4, maka rumus empirisnya adalah CO2, dimana rumus molekul langsung mengambil jawabn dari reaksi senyawa yang sudah dilakukan, sehingga tidak perlu disederhanakan lagi.</h2> <br>
+            <img src="RERM.png"> <br>
+            <h2>Setelah kita menerapkan konsep mol pada senyawa yang ditanyakan, dan ujungnya kita mendapatkan mol dari masing-masing unsur di dalam senyawa tersebut, maka kita dapat langsung menentukan jumlah dan ratio dari unsur - unsur tersebut langsung berdasarkan jumlah mol yang didapatkan.</h2>
+            <img src="RERM2.png"> <br>
+            <h2>Selain itu, dengan menggunakan konsep mol dan terminal mol sebagai pacuan, maka kita juga dapat menentukan kadar sebuah unsur dalam senyawa menggunakan kedua rumus berikut sesuai dengan bentuk senyawa yang ditanyakan yakni dalam bentuk molekul atau sebuah unsur tersendiri:</h2>
+            <img src="RERM3.png">
+        </div>
+        <div class="sidegrid" style="background-color:rgba(255, 166, 0, 0.163);"></div>
+    </div>
+</body>
+</html>

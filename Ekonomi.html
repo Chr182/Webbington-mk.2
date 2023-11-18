@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styling.css">
+    <title>Document</title>
+</head>
+<body onload="checkzoom()">
+    <div class="backgroundimg">
+        <img src="EkonomiBackground.jpeg" style="width:100%;">
+    </div>
+    <div class="placeholder" id="placeholder">
+        <div class="side" id="sidebox">
+            <button class="sidebutton" onclick="fly('1')">Debit dan Kredit</button>
+            <button class="sidebutton" onclick="fly('2')">Kode Akun</button>
+            <button class="sidebutton" onclick="fly('3')">Inflasi</button>
+        </div>
+        <div class="circle" onclick="slide()">
+            <img src="download.png" class="arrow" id="arrow">
+        </div>
+    </div>
+    <div id="checker2"></div>
+    <div class="header">
+        <div style="display:flex; flex-direction:row; margin:auto; width:auto;">
+            <img src="Logo-Web-2.png" alt="Logo Kolese Kanisius" style="width:2.75rem; margin-top:0.5rem; margin-bottom:0.5rem;">
+            <div style="display:flex; flex-direction:column; margin-left:20px; margin-top:auto; margin-bottom:auto;">
+                <h3 style="margin:0px; color:rgb(61, 61, 202);">Kolese</h3>
+                <h3 style="margin:0px; color:rgb(214, 161, 63);">Kanisius</h3>
+            </div>
+        </div>
+    </div>
+    <div class="BG">
+        <img src="ArchivePage.jpg" alt="Foto perpustakaan" style="width:100%; z-index:-2; margin:0px;">
+        <div class="centered" id="centertext"><h1>Ekonomi</h1></div>
+    </div>
+    <div id="checker"></div>
+    <div class="navbar" id="navbar">
+        <h3>Made by Yohanes Christopher Hardjito XI5/34 TIK_1</h3>
+        <div style="margin:auto;"></div>
+        <div class="island" style="width:600px;">
+            <a href="Archive.html">
+                <button class="IButton">
+                    <h3>Archives</h3>
+                </button>
+            </a>
+            <a href="Fisika.html">
+                <button class="IButton">
+                    <h3>Fisika</h3>
+                </button>
+            </a>
+            <a href="Kimia.html">
+                <button class="IButton">
+                    <h3>Kimia</h3>
+                </button>
+            </a>
+            <a href="Ekonomi.html">
+                <button class="IButton">
+                    <h3>Ekonomi</h3>
+                </button>
+            </a>
+            <a href="Matematika.html">
+                <button class="IButton">
+                    <h3>Matematika</h3>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="bodypage" id="bodypage">
+        <div class="sidegrid" style="background-color:rgba(255, 166, 0, 0.177);"></div>
+        <div class="maingrid">
+        <h1>Debit dan Kredit</h1> <hr>
+        <h2> Pengertian debit dan kredit adalah suatu istilah yang digunakan dalam ilmu akuntansi yang merujuk pada pengakuan transaksi di dalam laporan keuangan. Debit adalah istilah yang digunakan untuk menggambarkan sebuah transaksi yang menambah jumlah uang dalam sebuah rekening. Sebagai contoh, jika sebuah perusahaan menerima uang dari sebuah transaksi penjualan, maka perusahaan tersebut akan mencatat transaksi tersebut sebagai debit di dalam rekening penjualan. <br> <br> Sementara itu, kredit adalah istilah yang digunakan untuk menggambarkan sebuah transaksi yang mengurangi jumlah dari uang dalam sebuah rekening. Sebagai contoh, jika sebuah perusahaan mengeluarkan uang untuk membeli bahan baku, maka perusahaan tersebut akan mencatat transaksi tersebut sebagai kredit di dalam rekening pembelian.</h2> <br>
+        <h2>Maka sama seperti kode akun, masing-masing dari elemen akuntansi memiliki debit, dan kredit yang beda, yakni: <br> Harta: +debit -kredit <br> Utang: +kredit -debit <br> Modal: +kredit -debit <br> Pendapatan: +kredit -debit <br> Beban: +debit -kredit <br>Yang paling penting pada pencatatan nominal uang di akuntansi adalah untuk kredit dan debitnya seimbang, maka jika debitnya 1jt maka kreditnya juga harus 1jt menggunakan segala elemen yang ada</h2>
+        <br>
+        <h1 id="2">kodeAkun</h1> <hr>
+        <h2>KodeAkun sangatlah penting, karena mereka digunakan oleh seluruh akuntan di dunia, pada saat mereka membuat neraca, laporan keuangan, mekanisme debit kredit dan lainnya. Kode akun merupakan sekumpulan nomer 3 digit yang masing-masing memiliki definisinya sendiri, nomer yang di paling depan biasanya menentukan ia termasuk dalam elemen apa, kedua dan ketiga untuk klasifikasi lebih lanjut.</h2>
+        <img src="KodeAkun.png">
+        <h2>elemen - elemen akun yang merupakan kategori dari akun - akun yang lain, biasanya memiliki digit ketiga 0, misalnya 110, 120, 130, 140....dst</h2>
+        <br>
+        <h1 id="3">Inflasi</h1> <hr>
+        <h2>Inflasi adalah Proses meningkatnya harga-harga secara umum dan terus-menerus dalam jangka waktu lama atau Keadaan yang menyatakan nilai uang menurun <br> Deflasi adalah kebalikannya inflasi, yakni Proses menurunnya harga-harga secara umum dan terus-menerus dalam jangka waktu lama atau keadaan yang menyatakan nilai uang meningkat</h2> <br>
+        <h2>Maka dari situ, kita dapat mengelompokkan inflasi berdasarkan keparahannya, yakni: <br> Inflasi ringan: Inflasi yang masih belum begitu mengganggu keadaan ekonomi. Berkisar lebih kecil dari 10% <br> Inflasi sedang: Inflasi ini menurunkan kesejahteraan penduduk yang berpenghasilan tetap. Berkisar antara 10% hingga 30% <br> Inflasi berat: Inflasi ini mengacaukan kondisi perekonomian. Berkisar diantara 30% hingga 100% <br> Inflasi hiperberat: Inflasi ini sudah mengacaukan perekonomian dan sulit dihentikan. Berkisar lebih besar dari 100%</h2> <br>
+        <h2>Penyebab inflasi demikian: <br> • Permintaan yang lebih besar daripada supply (tarikan/tekanan permintaan) <br>• Kenaikan bahan baku maupun biaya produksi (desakan/dorongan biaya) <br>• Tekanan permintaan + dorongan ongkos (inflasi struktural)<br>• Peredaran uang yang tak terkendali<br>• Kekacauan politik dan ekonomi<br>• Tuntutan kenaikan upah</h2>
+        </div>
+        <div class="sidegrid" style="background-color:rgba(255, 166, 0, 0.163);"></div>
+    </div>
+</body>
+</html>

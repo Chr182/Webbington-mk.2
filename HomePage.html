@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styling.css">
+    <title>Document</title>
+</head>
+<body onload="checkzoom()">
+    <div class="backgroundimg">
+        <img src="jakarta-cityscape.jpg" style="width:100%;">
+    </div>
+    <div class="header">
+        <div style="display:flex; flex-direction:row; margin:auto; width:auto;">
+            <img src="Logo-Web-2.png" alt="Logo Kolese Kanisius" style="width:2.75rem; margin-top:0.5rem; margin-bottom:0.5rem;">
+            <div style="display:flex; flex-direction:column; margin-left:20px; margin-top:auto; margin-bottom:auto;">
+                <h3 style="margin:0px; color:rgb(61, 61, 202);">Kolese</h3>
+                <h3 style="margin:0px; color:rgb(214, 161, 63);">Kanisius</h3>
+            </div>
+        </div>
+    </div>
+    <div class="BG">
+        <img src="CC.jpeg" alt="Kolese Kanisius Jakarta" style="width:100%; z-index:-2; margin:0px;">
+        <div class="centered" id="centertext"><h1>Home Page</h1></div>
+    </div>
+    <div id="checker"></div>
+    <div class="navbar" id="navbar">
+        <h3>Made by Yohanes Christopher Hardjito XI5/34 TIK_1</h3>
+        <div style="margin:auto;"></div>
+        <div class="island">
+            <a href="HomePage.html">
+                <button class="IButton">
+                    <h3>Home Page</h3>
+                </button>
+            </a>
+            <a href="Archive.html">
+                <button class="IButton">
+                    <h3>Archive</h3>
+                </button>
+            </a>
+            <a href="AboutMe.html">
+                <button class="IButton">
+                    <h3>About Me</h3>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="placeholder" id="placeholder">
+        <div class="side" id="sidebox">
+            <h1>Halo manteman!</h1>
+        </div>
+        <div class="circle" onclick="slide()">
+            <img src="download.png" class="arrow" id="arrow">
+        </div>
+    </div>
+    <div class="bodypage" id="bodypage">
+        <div class="sidegrid"></div>
+        <div class="maingrid" style="height:700px;">
+            <h1 style="color:orange; font-size:xx-large">Selamat Datang!</h1>
+            <hr>
+            <h3>Selamat datang di web pembelajaran ini. Pertama-tama, web pembelajaran ini terdiri dari 3 halaman, yakni:</h3>
+            <h3>-> Home page: Informasi/alat pandu terkait pengggunaan website, layout halaman dan sebagai "tutorial" bagi pengguna untuk menelusuri webpage ini.</h3>
+            <h3>-> Archives: Kumpulan catatan dan foto dari beberapa mapel, seperti Fisika, Matematika dan Ekonomi, ditambah dengan fitur "sidebox" disamping yang bisa digunakan dengan menggunakan tanda panah di bagian kiri screen, sidebox ini dapat digunakan untuk meloncat ke bab-bab pada page tersebut.</h3>
+            <h3>-> About Me: Sekedar halaman untuk lebih mengenal saya, Yohanes Christopher Hardjito sebagai developer dari website ini.</h3>
+            <br>
+            <h3>Maka dari hal tersebut, saya harap bahwa situs web ini setidaknya dapat berguna bagi anda, jika terdapat kendala maka dipersilahkan untuk kembali ke homepage, dan review tutorial ini lain waktu. Untuk ke page/slide lain bisa click salah satu dari 3 tombol yang berada pada navigation bar halaman ini.</h3>
+            <br>
+            <hr>
+        </div>
+        <div class="sidegrid"></div>
+    </div>
+</body>
+</html>
